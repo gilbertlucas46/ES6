@@ -1,3 +1,3 @@
-# ES6 New Features
+# ES6 Features
 
 
