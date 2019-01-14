@@ -35,7 +35,7 @@
       position: absolute;
       width:100%;
       font-size: 100px;
-      transform:translateX(-200%);
+      transform:translateX(-300%);
       transition: all 0.5s;
       top:0;
     }
@@ -43,7 +43,7 @@
     .box p {
       position: absolute;
       width:100%;
-      transform:translateX(200%);
+      transform:translateX(300%);
       transition: all 0.5s;
       bottom:0;
     }
@@ -55,27 +55,26 @@
 
   <div class="wrap">
     <div class="box">
-      <h2>Wes Bos</h2>
-      <p class="social">@wesbos</p>
+      <h2>Gilbert Lucas</h2>
+      <p class="social">@gilbertlucas46</p>
     </div>
   </div>
 
   <script>
       const box = document.querySelector('.box');
-      box.addEventListener('click', function() {
-        let first = 'opening';
-        let second = 'open';
+      box.addEventListener('click', function(){
+        let = first = 'opening';
+        let second = "open";
 
         if(this.classList.contains(first)) {
-          // switch them
-          [first, second] = [second, first];
+          [first,second] = [second,first]
         }
-
+        
         this.classList.toggle(first);
-        setTimeout(() => {
+        setTimeout(() =>  {
           this.classList.toggle(second);
-        }, 250);
-      });
+        }, 500);
+      })
   </script>
 
 </body>
