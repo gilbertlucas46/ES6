@@ -15,7 +15,8 @@
   const markup = `
     <div class="song">
       <p>
-       
+        ${song.name} — ${song.artist}
+        ${song.featuring ? `(Featuring ${song.featuring})` : ''}
       </p>
     </div>
   `;
